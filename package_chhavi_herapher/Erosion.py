@@ -11,7 +11,7 @@ class Erosion:
         gray_scale = cv2.cvtColor(self.orig, cv2.COLOR_BGR2GRAY)
         cv2.imshow('original', self.orig)
         kernel = np.ones((5, 5), np.uint8)
-        erosion = cv2.erode(gray_scale, kernel, iterations=5)
+        erosion = cv2.erode(gray_scale, kernel, iterations=3)
         cv2.imshow('Erosion', erosion)
         plt.title("Erosion Graph")
         plt.xlabel("Intesity of Pixels")

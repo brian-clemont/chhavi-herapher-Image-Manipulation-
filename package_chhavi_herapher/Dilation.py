@@ -10,7 +10,7 @@ class Dilation:
         gray_scale = cv2.cvtColor(self.orig,cv2.COLOR_BGR2GRAY)
         cv2.imshow('original',self.orig)
         kernel = np.ones((5,5), np.uint8)
-        dilation = cv2.dilate(gray_scale, kernel, iterations=2)
+        dilation = cv2.dilate(gray_scale, kernel, iterations=1)
         cv2.imshow('Erosion', dilation)
         plt.title("dilation Graph")
         plt.xlabel("Intesity of Pixels")
