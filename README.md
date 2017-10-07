@@ -1,6 +1,6 @@
 # chhavi-herapher-Image-Manipulation-
 chhavi herapher (छवि हेरफेर) hindi for image manipulation
-in this project a basic image manipulation operations are performed using OpenCV Android
+in this project a basic image manipulation operations are performed using OpenCV Python
 
 ### Executing
 ```
