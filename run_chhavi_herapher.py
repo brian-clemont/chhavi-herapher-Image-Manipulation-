@@ -11,12 +11,12 @@ from package_chhavi_herapher import Contrast
 from package_chhavi_herapher import Crop
 
 dialogImage = DialogImage()
-img_path = DialogImage.file_path
+img_path = DialogImage.file_path    
 original_img = cv2.imread(img_path)
 print("CHHAVI HERAPHER")
 
 while True:
-    n = raw_input("1.Turn Grayscale\n2.Threshold\n3.Erosion\n4.Dilation\n5.Flipping\n6.Contrast\n7:Cropping\nq: Quit\n")
+    n = raw_input("1.Turn Grayscale\n2.Threshold\n3.Erosion\n4.Dilation\n5.Flipping\n6.Contrast\n7:Cropping\nq: Quit ")
     if n == '1':
         gray_scale_obj = GrayScale()
         gray_scale_obj.convertGray(original_img)
